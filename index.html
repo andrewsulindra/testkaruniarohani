@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Colorlib Templates">
+    <meta name="author" content="Colorlib">
+    <meta name="keywords" content="Colorlib Templates">
+
+    <!-- Title Page-->
+    <title>Test Karunia Rohani IFGF</title>
+
+    <!-- Icons font CSS-->
+    <link href="vendor/mdi-font/css/material-design-iconic-font.min.css" rel="stylesheet" media="all">
+    <link href="vendor/font-awesome-4.7/css/font-awesome.min.css" rel="stylesheet" media="all">
+    <!-- Font special for pages-->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+	
+    <!-- Vendor CSS-->
+    <link href="vendor/select2/select2.min.css" rel="stylesheet" media="all">
+    <link href="vendor/datepicker/daterangepicker.css" rel="stylesheet" media="all">
+	<link rel="stylesheet" type="text/css" href="vendor/perfect-scrollbar/perfect-scrollbar.css">
+	
+
+    <!-- Main CSS-->
+    <link href="css/main.css" rel="stylesheet" media="all">
+	<link rel="stylesheet" type="text/css" href="table/css/util.css">
+	<link rel="stylesheet" type="text/css" href="table/css/main.css">
+	
+<script type="text/javascript">
+  var urlsubmit = "https://portal.ifgfsby.org/api/onlineclass_karuniarohani";
+  var urldata = "https://portal.ifgfsby.org/api/onlineclass_getteacher"; 
+</script>
+
+</head>
+
+<body>
+    <div class="page-wrapper bg-blue p-t-30 p-b-100 font-poppins">
+        <div class="wrapper wrapper--w1360">
+            <div class="card card-4">
+                <div class="card-body">
+                    <h2 class="title">Karunia Rohani</h2>
+                    <form id="myForm" method="POST">
+						<div class="input-group">
+							<label class="label">name</label>
+							<input class="input--style-4" type="text" name="fullname" required>
+						</div>
+                        <div class="row row-space">
+                            <div class="col-2">
+                                <div class="input-group">
+									<label class="label">email</label>
+									<input class="input--style-4" type="email" name="email" required>
+                                </div>
+                            </div>
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <label class="label">Gender</label>
+                                    <div class="p-t-10">
+                                        <label class="radio-container m-r-45">Male
+                                            <input type="radio" checked="checked" name="gender" value="male">
+                                            <span class="checkmark"></span>
+                                        </label>
+                                        <label class="radio-container">Female
+                                            <input type="radio" name="gender" value="female">
+                                            <span class="checkmark"></span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="input-group">
+                            <label class="label">Teacher</label>
+                            <div class="rs-select2 js-select-simple select--no-search">
+								<select class="form-control" name="teacher" id="teacher" style="width: 100%;" required>
+								  <option></option>
+								</select>  
+                                <div class="select-dropdown"></div>
+                            </div>
+                        </div>
+						
+						
+						
+						
+                        
+                          <div class="container-table100">
+                            <div class="wrap-table100">
+                              <div class="table100">
+                                <table>
+                                  <thead>
+                                    <tr class="table100-head">
+                                      <th class="first-col"></th>
+                                      <th>0 – tidak pernah terjadi</th>
+                                      <th>1 – jarang terjadi</th>
+                                      <th>2 – kadang-kadang terjadi</th>
+                                      <th>3 – sering terjadi</th>
+                                      <th>4 – selalu terjadi secara konsisten</th>
+                                    </tr>
+                                  </thead>
+                                  <tbody id="t1">
+                                      
+                                  </tbody>
+                                </table>
+                                <div id="d1">
+
+                                </div>
+                                <br><br>
+                                <div id="resulttoggle" style="display:none">       
+                                  Result                          
+                                  <ul class="chart" id="d2">
+                                  </ul>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        
+
+
+
+			
+					
+                        <div class="p-t-15">
+                            <button class="btn btn--radius-2 btn--blue" type="submit">Submit</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Jquery JS-->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <!-- Vendor JS-->
+    <script src="vendor/select2/select2.min.js"></script>
+    <script src="vendor/datepicker/moment.min.js"></script>
+    <script src="vendor/datepicker/daterangepicker.js"></script>
+	<script src="vendor/bootstrap/js/popper.js"></script>
+	<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+	
+    <!-- Main JS-->
+    <script src="js/global.js"></script>
+  <script src="table/js/main.js"></script>
+  <script src="js/hBarChart.js"></script>
+
+<script type="text/javascript">
+
+var json = [   
+{"question": "1. Saya dapat melakukan banyak hal dalam satu waktu.","group": "Administrasi/Memimpin"},{"question": "2. Saya ingin memulai gereja di wilayah yang memerlukan satu gereja lokal yang kuat.","group": "Rasul / Pionir"},{"question": "3. Saya dapat dengan mudah membedakan apa yang benar dan salah.","group": "Membedakan roh"},{"question": "4. Mudah bagi saya untuk membujuk orang lain untuk terlibat dalam pelayanan.","group": "Penghiburan"},{"question": "5. Saya temukan diri saya berbagi perjalanan kekristenan saya dengan orang lain.","group": "Penginjilan"},{"question": "6. Mudah bagi saya untuk memercayai Tuhan untuk menjawab doa dalam situasi-situasi sulit.","group": "Iman"},{"question": "7. Saya suka memberikan kekayaan kepada orang atau proyek-proyek yang memerlukan bantuan.","group": "Memberi"},{"question": "8. Orang-orang mengatakan bahwa doa-doa saya telah menolong mereka dalam kesembuhan mereka.","group": "Kesembuhan"},{"question": "9. Saya suka melakukan hal-hal kecil yang orang lain tidak ingin lakukan.","group": "Melayani / Memberi Bantuan"},{"question": "10. Saya dapat menafsirkan saat orang lain berbicara dalam bahasa roh.","group": "Menerjemahkan Bahasa Roh"},{"question": "11. Saya menerima informasi yang saya rasakan datang dari Roh Kudus mengenai orang lain.","group": "Pengetahuan"},{"question": "12. Saya merasakan empati terhadap mereka yang hidupnya kurang beruntung.","group": "Belas Kasihan"},{"question": "13. Saya telah dipakai Allah untuk melakukan mujizat-mujizat.","group": "Mujizat"},{"question": "14. Saya terdorong untuk membagikan kebenaran yang telah ditaruh dalam pikiran saya oleh Allah.","group": "Bernubuat"},{"question": "15. Saya suka membimbing orang lain untuk kesehatan, pertumbuhan, kedewasaan rohani.","group": "Penggembalaan"},{"question": "16. Saya sering tergerak untuk berbicara dalam bahasa roh.","group": "Berkata-kata dalam bahasa roh"},{"question": "17. Saya dapat dengan mudah menemukan wawasan Alkitabiah dan rindu untuk mengkomunikasikan hal tersebut kepada orang lain.","group": "Mengajar"},{"question": "18. Orang-orang sering bertanya pada saya untuk sebuah nasihat dalam keputusan-keputusan penting.","group": "Hikmat"},{"question": "19. Saya memiliki kemampuan untuk bekerja dengan baik di bawah tekanan.","group": "Administrasi/Memimpin"},{"question": "20. Saya mau untuk pindah tempat tinggal untuk memulai sebuah penanaman gereja baru.","group": "Rasul / Pionir"},{"question": "21. Saya dapat membedakan antara kebutuhan riil dari seseorang atau kebutuhan yang dirasakannya.","group": "Membedakan roh"},{"question": "22. Saya menikmati saat memberikan nasihat Alkitabiah untuk membantu orang-orang membuat pilihan yang tepat.","group": "Penghiburan"},{"question": "23. Saya suka menemukan cara-cara baru untuk membangun hubungan dengan mereka yang belum bergereja.","group": "Penginjilan"},{"question": "24. Saya percaya pada Tuhan untuk melakukan perkara-perkara besar dalam hidup saya dan hidup orang-orang sekitar saya.","group": "Iman"},{"question": "25. Saya memberikan melebihi dari persepuluhan saya untuk kemajuan proyek ataupun program yang memenuhi tujuan-tujuan Allah.","group": "Memberi"},{"question": "26. Saya menemukan diri saya berdoa bagi orang sakit, karena saya tahu Allah akan menyembuhkan mereka.","group": "Kesembuhan"},{"question": "27. Saya lebih baik melayani orang lain daripada dilayani oleh mereka.","group": "Melayani / Memberi Bantuan"},{"question": "28. Ketika orang-orang berbicara dalam bahasa roh, saya merasakan satu kerinduan untuk menerjemahkan.","group": "Menerjemahkan Bahasa Roh"},{"question": "29. Saya mengetahui informasi mengenai orang lain tanpa mereka beritahukan kepada saya informasi tersebut.","group": "Pengetahuan"},{"question": "30. Saya menikmati saat menolong mereka yang sedang menghadapi situasi-situasi sulit.","group": "Belas Kasihan"},{"question": "31. Orang-orang mengatakan saya telah dipakai untuk melakukan sebuah mujizat.","group": "Mujizat"},{"question": "32. Saya merasakan pemahaman-pemahaman mengenai masa depan.","group": "Bernubuat"},{"question": "33. Saya memiliki belas kasihan terhadap mereka yang sedang membutuhkan, dan mendapatkan diri saya menolong mereka melewati proses tersebut.","group": "Penggembalaan"},{"question": "34. Tuhan telah memakai saya untuk berbicara dalam bahasa yang belum pernah saya pelajari kepada sekelompok orang.","group": "Berkata-kata dalam bahasa roh"},{"question": "35. Saya dapat mengimpartasikan pengetahuan dan keahlian dengan cara yang membuat orang lain mudah mempelajari dan mengaplikasikannya.","group": "Mengajar"},{"question": "36. Saya merasa mudah untuk mengidentifikasikan solusi-solusi praktis saat orang lain terlihat bingung.","group": "Hikmat"},{"question": "37. Saya suka menghadapi apa yang kelihatannya adalah tantangan-tantangan rumit.","group": "Administrasi/Memimpin"},{"question": "38. Saya temukan diri saya sering memikirkan tentang penanaman gereja.","group": "Rasul / Pionir"},{"question": "39. Kesan-kesan pertama saya terhadap motif seseorang seringkali benar.","group": "Membedakan roh"},{"question": "40. Saya temukan diri saya menawarkan harapan bagi orang lain dengan mengarahkan mereka kepada janji-janji Allah.","group": "Penghiburan"},{"question": "41. Saya sukses mengaplikasikan injil untuk berhubungan dengan kebutuhan atau kondisi seseorang.","group": "Penginjilan"},{"question": "42. Saya yakin bahwa Firman Allah mendikte keadaan saya dan kondisi yang ada tidak mendikte iman saya.","group": "Iman"},{"question": "43. Pemberian-pemberian amal menduduki prioritas tinggi dalam hidup saya.","group": "Memberi"},{"question": "44. Saya mencari-cari kesempatan untuk berdoa bagi mereka yang sakit.","group": "Kesembuhan"},{"question": "45. Saya lebih suka berfungsi di balik layar daripada dalam peran-peran yang lebih terlihat.","group": "Melayani / Memberi Bantuan"},{"question": "46. Tuhan mengarahkan saya untuk menerjemahkan arti dari seseorang yang sedang berbahasa roh.","group": "Menerjemahkan Bahasa Roh"},{"question": "47. Saya menerima kesan-kesan mengenai orang tertentu atau situasi tertentu.","group": "Pengetahuan"},{"question": "48. Saya suka menolong dengan praktis mereka yang tidak dapat menolong dirinya.","group": "Belas Kasihan"},{"question": "49. Tanda-tanda dan mujizat terjadi saat saya sedang melayani orang lain.","group": "Mujizat"},{"question": "50. Firman Tuhan hidup bagi saya mengenai kehidupan orang lain.","group": "Bernubuat"},{"question": "51. Saya mencari untuk menolong orang lain bertumbuh dalam Kristus.","group": "Penggembalaan"},{"question": "52. Saya telah dipakai untuk membangun orang lain dengan menggunakan bahasa roh sebagai alat utama dalam mendidik.","group": "Berkata-kata dalam bahasa roh"},{"question": "53. Saya menikmati saat mengarahkan orang lain dan melihat perubahan positif sebagai hasil dari arahan saya.","group": "Mengajar"},{"question": "54. Saat berbicara pada seseorang mengenai tantangan pribadi saya merasakan pemahaman khusus mengenai situasi mereka.","group": "Hikmat"}
+  ];
+var txt = '{"name":"John", "age":30, "city":"New York"}'
+
+$(document).ready(function () {
+  
+        var tr;
+        for (var i = 0; i < json.length; i++) {
+            tr = $('<tr/>');
+            tr.append("<td class="+"first-col"+">" + json[i].question + " | "+ json[i].group +"</td>");
+
+            tr.append("<td><input type='radio' value=0 name='answer[soal"+i+"][answer]' required/></td>");
+            tr.append("<td><input type='radio' value=1 name='answer[soal"+i+"][answer]' required/></td>");
+            tr.append("<td><input type='radio' value=2 name='answer[soal"+i+"][answer]' checked required/></td>");
+            tr.append("<td><input type='radio' value=3 name='answer[soal"+i+"][answer]' required/></td>");
+            tr.append("<td><input type='radio' value=4 name='answer[soal"+i+"][answer]' required/></td>");
+			tr.append("<td><input type='hidden' value='"+json[i].question+"' name='answer[soal"+i+"][question]' required/></td>");
+            tr.append("<td><input type='hidden' value='"+json[i].group+"' name='answer[soal"+i+"][group]' required/></td>");
+            $('#t1').append(tr);
+        }
+
+        $.ajax({
+    url: urldata,
+                type: 'GET',
+                dataType: 'json',
+                crossDomain: true,
+                success: function(data) {
+
+                  for(var key in data.teacher) {
+                    var id = data.teacher[key].id;
+                    var idm = data.teacher[key].idMember;
+                    var value = data.teacher[key].firstname + " "+ data.teacher[key].lastname;
+                    $('#teacher').append(`
+                      <option value="${idm}">${value}</option>
+                    `)
+                  }  
+
+                },
+                error: function (e) {
+                  //alert("Something went wrong on LOAD");
+                  location.href = "500.html"
+                }
+            });
+
+
+
+});
+
+
+
+
+
+$('#myForm').submit(function() {
+  $('form button').attr("disabled","disabled");
+  
+        
+
+        var formData = JSON.stringify($("#myForm").serializeArray());
+        var obj = JSON.parse(formData);
+
+      var form = document.getElementById("myForm");
+      var dt = form.elements["answer[soal1][answer]"].value;
+
+      var new_array = [];
+      for (var i = 0; i < json.length; i++) {
+        var a1 = form.elements["answer[soal"+i+"][group]"].value;
+        var a2 = parseInt(form.elements["answer[soal"+i+"][answer]"].value);
+
+        new_array.push([a1,a2]);
+      }
+
+
+
+      console.log(new_array);
+
+
+
+          var res = [];
+      for (var prop of new_array) {
+        !res.some(value => value && value[0] === prop[0])
+        ? res.push(prop)
+        : res.forEach(value => {
+            if (value[0] === prop[0]) value[1] += prop[1]
+          });      
+      }
+
+      console.log(res);
+
+
+
+      $("#d1").html("");
+      var inp;
+      for(var i=0; i < res.length; i++){
+        inp = $('<div/>');
+
+        inp.append("<input type='hidden' name='result[r"+i+"][hasil]' value='"+res[i][0]+"'/>");
+        inp.append("<input type='hidden' name='result[r"+i+"][nilai]' value='"+res[i][1]+"'/>");
+        $('#d1').append(inp);
+      }
+
+
+      var inp;
+      for(var i=0; i < 5; i++){
+        inp = $('<ul/>');
+
+        inp.append("<li data-data='"+res[i][1]+"'>"+res[i][0]+" : "+res[i][1]+"</li>");
+
+        $('#d2').append(inp);
+      }
+      var x = document.getElementById("resulttoggle");
+      x.style.display = "block";
+      $("ul.chart").hBarChart();
+
+        
+
+
+            $.ajax({
+                type: 'POST',
+				crossDomain: true,
+                url: urlsubmit,
+                data: $(this).serialize(),
+                dataType: 'json',
+                success: function(data) {
+                  //alert(JSON.stringify(data));
+                  alert("Submit Success");
+                },
+                error: function (data) {
+                  //alert(JSON.stringify(data));                 
+                  alert("Something went wrong");
+                  $('form button').attr("disabled",false);
+                }
+            })
+            return false;
+        });
+
+
+
+
+
+</script>	
+	
+	
+	
+</body><!-- This templates was made by Colorlib (https://colorlib.com) -->
+
+</html>
+<!-- end document-->

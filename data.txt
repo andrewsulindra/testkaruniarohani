@@ -1,0 +1,216 @@
+    {
+      "question": "1. Saya dapat melakukan banyak hal dalam satu waktu.",
+      "group": "Administrasi/Memimpin"
+    },
+    {
+      "question": "2. Saya ingin memulai gereja di wilayah yang memerlukan satu gereja lokal yang kuat.",
+      "group": "Rasul / Pionir"
+    },
+    {
+      "question": "3. Saya dapat dengan mudah membedakan apa yang benar dan salah.",
+      "group": "Membedakan roh"
+    },
+    {
+      "question": "4. Mudah bagi saya untuk membujuk orang lain untuk terlibat dalam pelayanan.",
+      "group": "Penghiburan"
+    },
+    {
+      "question": "5. Saya temukan diri saya berbagi perjalanan kekristenan saya dengan orang lain.",
+      "group": "Penginjilan"
+    },
+    {
+      "question": "6. Mudah bagi saya untuk memercayai Tuhan untuk menjawab doa dalam situasi-situasi sulit.",
+      "group": "Iman"
+    },
+    {
+      "question": "7. Saya suka memberikan kekayaan kepada orang atau proyek-proyek yang memerlukan bantuan.",
+      "group": "Memberi"
+    },
+    {
+      "question": "8. Orang-orang mengatakan bahwa doa-doa saya telah menolong mereka dalam kesembuhan mereka.",
+      "group": "Kesembuhan"
+    },
+    {
+      "question": "9. Saya suka melakukan hal-hal kecil yang orang lain tidak ingin lakukan.",
+      "group": "Melayani / Memberi Bantuan"
+    },
+    {
+      "question": "10. Saya dapat menafsirkan saat orang lain berbicara dalam bahasa roh.",
+      "group": "Menerjemahkan Bahasa Roh"
+    },
+    {
+      "question": "11. Saya menerima informasi yang saya rasakan datang dari Roh Kudus mengenai orang lain.",
+      "group": "Pengetahuan"
+    },
+    {
+      "question": "12. Saya merasakan empati terhadap mereka yang hidupnya kurang beruntung.",
+      "group": "Belas Kasihan"
+    },
+    {
+      "question": "13. Saya telah dipakai Allah untuk melakukan mujizat-mujizat.",
+      "group": "Mujizat"
+    },
+    {
+      "question": "14. Saya terdorong untuk membagikan kebenaran yang telah ditaruh dalam pikiran saya oleh Allah.",
+      "group": "Bernubuat"
+    },
+    {
+      "question": "15. Saya suka membimbing orang lain untuk kesehatan, pertumbuhan, kedewasaan rohani.",
+      "group": "Penggembalaan"
+    },
+    {
+      "question": "16. Saya sering tergerak untuk berbicara dalam bahasa roh.",
+      "group": "Berkata-kata dalam bahasa roh"
+    },
+    {
+      "question": "17. Saya dapat dengan mudah menemukan wawasan Alkitabiah dan rindu untuk mengkomunikasikan hal tersebut kepada orang lain.",
+      "group": "Mengajar"
+    },
+    {
+      "question": "18. Orang-orang sering bertanya pada saya untuk sebuah nasihat dalam keputusan-keputusan penting.",
+      "group": "Hikmat"
+    },
+    {
+      "question": "19. Saya memiliki kemampuan untuk bekerja dengan baik di bawah tekanan.",
+      "group": "Administrasi/Memimpin"
+    },
+    {
+      "question": "20. Saya mau untuk pindah tempat tinggal untuk memulai sebuah penanaman gereja baru.",
+      "group": "Rasul / Pionir"
+    },
+    {
+      "question": "21. Saya dapat membedakan antara kebutuhan riil dari seseorang atau kebutuhan yang dirasakannya.",
+      "group": "Membedakan roh"
+    },
+    {
+      "question": "22. Saya menikmati saat memberikan nasihat Alkitabiah untuk membantu orang-orang membuat pilihan yang tepat.",
+      "group": "Penghiburan"
+    },
+    {
+      "question": "23. Saya suka menemukan cara-cara baru untuk membangun hubungan dengan mereka yang belum bergereja.",
+      "group": "Penginjilan"
+    },
+    {
+      "question": "24. Saya percaya pada Tuhan untuk melakukan perkara-perkara besar dalam hidup saya dan hidup orang-orang sekitar saya.",
+      "group": "Iman"
+    },
+    {
+      "question": "25. Saya memberikan melebihi dari persepuluhan saya untuk kemajuan proyek ataupun program yang memenuhi tujuan-tujuan Allah.",
+      "group": "Memberi"
+    },
+    {
+      "question": "26. Saya menemukan diri saya berdoa bagi orang sakit, karena saya tahu Allah akan menyembuhkan mereka.",
+      "group": "Kesembuhan"
+    },
+    {
+      "question": "27. Saya lebih baik melayani orang lain daripada dilayani oleh mereka.",
+      "group": "Melayani / Memberi Bantuan"
+    },
+    {
+      "question": "28. Ketika orang-orang berbicara dalam bahasa roh, saya merasakan satu kerinduan untuk menerjemahkan.",
+      "group": "Menerjemahkan Bahasa Roh"
+    },
+    {
+      "question": "29. Saya mengetahui informasi mengenai orang lain tanpa mereka beritahukan kepada saya informasi tersebut.",
+      "group": "Pengetahuan"
+    },
+    {
+      "question": "30. Saya menikmati saat menolong mereka yang sedang menghadapi situasi-situasi sulit.",
+      "group": "Belas Kasihan"
+    },
+    {
+      "question": "31. Orang-orang mengatakan saya telah dipakai untuk melakukan sebuah mujizat.",
+      "group": "Mujizat"
+    },
+    {
+      "question": "32. Saya merasakan pemahaman-pemahaman mengenai masa depan.",
+      "group": "Bernubuat"
+    },
+    {
+      "question": "33. Saya memiliki belas kasihan terhadap mereka yang sedang membutuhkan, dan mendapatkan diri saya menolong mereka melewati proses tersebut.",
+      "group": "Penggembalaan"
+    },
+    {
+      "question": "34. Tuhan telah memakai saya untuk berbicara dalam bahasa yang belum pernah saya pelajari kepada sekelompok orang.",
+      "group": "Berkata-kata dalam bahasa roh"
+    },
+    {
+      "question": "35. Saya dapat mengimpartasikan pengetahuan dan keahlian dengan cara yang membuat orang lain mudah mempelajari dan mengaplikasikannya.",
+      "group": "Mengajar"
+    },
+    {
+      "question": "36. Saya merasa mudah untuk mengidentifikasikan solusi-solusi praktis saat orang lain terlihat bingung.",
+      "group": "Hikmat"
+    },
+    {
+      "question": "37. Saya suka menghadapi apa yang kelihatannya adalah tantangan-tantangan rumit.",
+      "group": "Administrasi/Memimpin"
+    },
+    {
+      "question": "38. Saya temukan diri saya sering memikirkan tentang penanaman gereja.",
+      "group": "Rasul / Pionir"
+    },
+    {
+      "question": "39. Kesan-kesan pertama saya terhadap motif seseorang seringkali benar.",
+      "group": "Membedakan roh"
+    },
+    {
+      "question": "40. Saya temukan diri saya menawarkan harapan bagi orang lain dengan mengarahkan mereka kepada janji-janji Allah.",
+      "group": "Penghiburan"
+    },
+    {
+      "question": "41. Saya sukses mengaplikasikan injil untuk berhubungan dengan kebutuhan atau kondisi seseorang.",
+      "group": "Penginjilan"
+    },
+    {
+      "question": "42. Saya yakin bahwa Firman Allah mendikte keadaan saya dan kondisi yang ada tidak mendikte iman saya.",
+      "group": "Iman"
+    },
+    {
+      "question": "43. Pemberian-pemberian amal menduduki prioritas tinggi dalam hidup saya.",
+      "group": "Memberi"
+    },
+    {
+      "question": "44. Saya mencari-cari kesempatan untuk berdoa bagi mereka yang sakit.",
+      "group": "Kesembuhan"
+    },
+    {
+      "question": "45. Saya lebih suka berfungsi di balik layar daripada dalam peran-peran yang lebih terlihat.",
+      "group": "Melayani / Memberi Bantuan"
+    },
+    {
+      "question": "46. Tuhan mengarahkan saya untuk menerjemahkan arti dari seseorang yang sedang berbahasa roh.",
+      "group": "Menerjemahkan Bahasa Roh"
+    },
+    {
+      "question": "47. Saya menerima kesan-kesan mengenai orang tertentu atau situasi tertentu.",
+      "group": "Pengetahuan"
+    },
+    {
+      "question": "48. Saya suka menolong dengan praktis mereka yang tidak dapat menolong dirinya.",
+      "group": "Belas Kasihan"
+    },
+    {
+      "question": "49. Tanda-tanda dan mujizat terjadi saat saya sedang melayani orang lain.",
+      "group": "Mujizat"
+    },
+    {
+      "question": "50. Firman Tuhan hidup bagi saya mengenai kehidupan orang lain.",
+      "group": "Bernubuat"
+    },
+    {
+      "question": "51. Saya mencari untuk menolong orang lain bertumbuh dalam Kristus.",
+      "group": "Penggembalaan"
+    },
+    {
+      "question": "52. Saya telah dipakai untuk membangun orang lain dengan menggunakan bahasa roh sebagai alat utama dalam mendidik.",
+      "group": "Berkata-kata dalam bahasa roh"
+    },
+    {
+      "question": "53. Saya menikmati saat mengarahkan orang lain dan melihat perubahan positif sebagai hasil dari arahan saya.",
+      "group": "Mengajar"
+    },
+    {
+      "question": "54. Saat berbicara pada seseorang mengenai tantangan pribadi saya merasakan pemahaman khusus mengenai situasi mereka.",
+      "group": "Hikmat"
+    }
